@@ -12,10 +12,12 @@ publish = "python setup.py sdist upload"
 test-publish = "python -m twine upload --repository testpypi dist/*"
 
 [dev-packages]
-
-[packages]
 setuptools = "*"
 wheel = "*"
+readme-renderer = "*"
+pypandoc = "*"
+
+[packages]
 
 [requires]
 python_version = "3.8"

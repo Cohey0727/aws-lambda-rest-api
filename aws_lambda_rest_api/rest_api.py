@@ -42,7 +42,8 @@ class RestApi:
         }
 
     def get_method(self, http_method: str, is_detail: bool):
-        return self.detail_methods.get(str, self.default) if is_detail else self.list_methods.get(str, self.default)
+        http_method = http_method.lower()
+        return self.detail_methods.get(http_method, self.default) if is_detail else self.list_methods.get(http_method, self.default)
 
     def create_handler(self):
 

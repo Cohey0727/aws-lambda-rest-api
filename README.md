@@ -1,4 +1,5 @@
 # AWS Lambda Rest Api
+
 ## What is "AWS Lambda Rest Api"
 It makes rest api lambda simple and readable.
 
@@ -12,7 +13,6 @@ or
 
 ```txt
 # requirements.txt
-
 ︙
 aws-lambda-rest-api
 ︙
@@ -22,7 +22,7 @@ aws-lambda-rest-api
 
 Suppose write resource file as below,
 
-```yml
+```yaml
 Resources:
   QuestionApi:
     Type: AWS::Serverless::Function
