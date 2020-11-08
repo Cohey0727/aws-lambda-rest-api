@@ -5,25 +5,25 @@ class RestApi:
     detail_key = DEFAULT_DETAIL_KEY
 
     def list(self, event, context):
-        raise AttributeError()
+        raise AttributeError('list method does not be implemented')
 
     def retrieve(self, event, context):
-        raise AttributeError()
+        raise AttributeError('retrieve method does not be implemented')
 
     def create(self, event, context):
-        raise AttributeError()
+        raise AttributeError('create method does not be implemented')
 
     def update(self, event, context):
-        raise AttributeError()
+        raise AttributeError('update method does not be implemented')
 
     def patial_update(self, event, context):
-        raise AttributeError()
+        raise AttributeError('patial_update method does not be implemented')
 
     def destory(self, event, context):
-        raise AttributeError()
+        raise AttributeError('destory method does not be implemented')
 
     def default(self, event, context):
-        raise AttributeError()
+        raise AttributeError('default method does not be implemented')
 
     @property
     def detail_methods(self):

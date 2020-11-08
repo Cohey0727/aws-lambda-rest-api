@@ -14,7 +14,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name=PACKAGE_NAME,
-    version='1.0.3',
+    version='1.0.4',
     packages=['aws_lambda_rest_api'],
     author='Kohei Okamoto',
     author_email='ohayousagi.ac.kook0727@gmail.com',
