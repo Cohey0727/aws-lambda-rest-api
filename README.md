@@ -112,6 +112,7 @@ class QuestionApi(RestApi):
           'body': 'Done destroy.'
       }
 
+lambda_handler = QuestionApi().create_handler()
 
 ```
 
