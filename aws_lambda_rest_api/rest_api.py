@@ -54,7 +54,7 @@ class RestApi:
 
         def handler(event, context):
             http_method = event['httpMethod']
-            is_detail = event['pathParameters'].get(self.detail_key) != None
+            is_detail = event.get('pathParameters', {}).get(self.detail_key) != None
             rest_function = self.get_method(http_method, is_detail)
             response = rest_function(event, context)
             self.decorate_response(response)
