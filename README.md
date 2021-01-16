@@ -130,3 +130,12 @@ The chart below shows the relationship between the http method and overrided met
 |DELETE|TRUE|destroy|
 |DELETE|FALSE|-|
 |ANY|ANY|default|
+
+
+## How To Release
+
+```python
+$ pipenv run clean
+$ pipenv run package
+$ pipenv run publish
+```
