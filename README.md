@@ -56,7 +56,7 @@ Resources:
           Properties:
             Path: /questions/{question_id}
             Method: put
-        DestoryQuestion:
+        DestroyQuestion:
           Type: Api
           Properties:
             Path: /questions/{question_id}
@@ -105,7 +105,7 @@ class QuestionApi(RestApi):
             'body': 'Done update partially.',
         }
 
-    def destory(self, event, context):
+    def destroy(self, event, context):
       question_id = event['pathParameters'].get('question_id')
       return {
           'statusCode': 200,

@@ -21,7 +21,7 @@ class RestApi:
         raise AttributeError('patial_update method does not be implemented')
 
     def destroy(self, event, context):
-        raise AttributeError('destory method does not be implemented')
+        raise AttributeError('destroy method does not be implemented')
 
     def default(self, event, context):
         raise AttributeError('default method does not be implemented')
@@ -32,7 +32,7 @@ class RestApi:
             'get': self.retrieve,
             'put': self.update,
             'patch': self.patial_update,
-            'delete': self.destory,
+            'delete': self.destroy,
         }
 
     @property
