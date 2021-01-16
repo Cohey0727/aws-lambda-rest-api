@@ -20,7 +20,7 @@ class RestApi:
     def patial_update(self, event, context):
         raise AttributeError('patial_update method does not be implemented')
 
-    def destory(self, event, context):
+    def destroy(self, event, context):
         raise AttributeError('destory method does not be implemented')
 
     def default(self, event, context):
