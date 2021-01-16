@@ -79,11 +79,11 @@ class QuestionApi(RestApi):
         }
 
     def retrieve(self, event, context):
-    question_id = event['pathParameters'].get('question_id')
-    return {
-        'statusCode': 200,
-        'body': {'id': question_id, 'title': 'Hello Question'},
-    }
+      question_id = event['pathParameters'].get('question_id')
+      return {
+          'statusCode': 200,
+          'body': {'id': question_id, 'title': 'Hello Question'},
+      }
 
     def create(self, event, context):
         return {
@@ -92,11 +92,11 @@ class QuestionApi(RestApi):
         }
 
     def update(self, event, context):
-    question_id = event['pathParameters'].get('question_id')
-    return {
-        'statusCode': 200,
-        'body': 'Done update.',
-    }
+      question_id = event['pathParameters'].get('question_id')
+      return {
+          'statusCode': 200,
+          'body': 'Done update.',
+      }
 
     def partial_update(self, event, context):
         question_id = event['pathParameters'].get('question_id')
@@ -106,12 +106,13 @@ class QuestionApi(RestApi):
         }
 
     def destory(self, event, context):
-    question_id = event['pathParameters'].get('question_id')
-    return {
-        'statusCode': 200,
-        'body': 'Done destroy.'
-    }
+      question_id = event['pathParameters'].get('question_id')
+      return {
+          'statusCode': 200,
+          'body': 'Done destroy.'
+      }
 
+lambda_handler = QuestionApi().create_handler()
 
 ```
 
